@@ -4,7 +4,37 @@
   <body>
     <div class="page">
       @@include("../blocks/header/header.html")
-      <main class="page__content">Main</main>
+      <main class="page__content">
+        <ul class="page__list">
+          <li class="page__item">
+            <button class="button" type="button">
+              <span class="button__text">Кнопка</span>
+              <div class="button__spinner">
+                <div id="dots1">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </button>
+          </li>
+          <li class="page__item">
+            <button class="button" type="button">
+              <span class="button__text">Кнопка</span>
+              <div class="button__spinner">
+                <div id="dots2">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </button>
+          </li>
+          <li class="page__item">
+            <span class="loader"></span>
+          </li>
+        </ul>
+      </main>
       @@include("../blocks/footer/footer.html")
     </div>
     <script src="./scripts/main.js" defer></script>
